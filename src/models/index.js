@@ -1,5 +1,7 @@
-const PersonModel = require("./person.model");
+import PersonModel from "./person.model";
 
-module.exports = {
+const models = {
   PersonModel,
 };
+
+export default models;

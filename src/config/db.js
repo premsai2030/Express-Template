@@ -1,9 +1,9 @@
 const development = {
-  "url":"mongodb://localhost:27017/person"
+  "url": "mongodb://localhost:27017/person"
 }
 
 const production = {
-  "url":"place your own url here"
+  "url": "place your own url here"
 }
 
-module.exports = process.env.NODE_ENV ? production : development ;
+export default process.env.NODE_ENV ? production : development;

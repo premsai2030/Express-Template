@@ -1,5 +1,4 @@
-const services = require("../services");
-
+import services from '../services';
 class PersonController {
   async getAll(req, res) {
     try {
@@ -20,4 +19,4 @@ class PersonController {
   }
 }
 
-module.exports = new PersonController();
+export default new PersonController();

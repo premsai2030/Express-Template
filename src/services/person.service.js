@@ -1,5 +1,4 @@
-const PersonModel = require("../models/person.model");
-
+import PersonModel from "../models/person.model";
 class PersonService {
   async getAll() {
     const data = await PersonModel.find();
@@ -11,4 +10,4 @@ class PersonService {
   }
 }
 
-module.exports = new PersonService();
+export default new PersonService();

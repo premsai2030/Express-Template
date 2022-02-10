@@ -1,19 +1,28 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "express-template",
+  "version": "1.0.1",
+  "description": "Express Starter Template",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node index.js",
+    "dev": "npm run build && nodemon lib/index.js",
+    "start": "npm run build && node lib/index.js",
+    "build": "babel src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Express", "Starter", "Template"],
+  "author": "Prem Sai Vittal",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
     "helmet": "^5.0.2",
-    "mongoose": "^6.1.8"
+    "mongoose": "^6.1.8",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11"
   }
 }
